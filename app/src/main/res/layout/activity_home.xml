@@ -3,12 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/layout_padding_large"
     tools:context="com.grannylauncher.HomeActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_centerInParent="true" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/green_rounded_background_borderless"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/layout_margin_medium"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin_medium"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/home_title"
+            android:textAllCaps="true"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 </RelativeLayout>
