@@ -1,38 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/layout_padding_large"
+    android:paddingBottom="64dp"
+    android:paddingEnd="@dimen/layout_padding_large"
+    android:paddingStart="@dimen/layout_padding_large"
+    android:paddingTop="32dp"
     tools:context="com.grannylauncher.HomeActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/green_rounded_background_borderless"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="@dimen/layout_margin_medium"
-            android:src="@drawable/ic_home" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/layout_margin_medium"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:text="@string/home_title"
-            android:textAllCaps="true"
-            android:textColor="@color/text_color_white"
-            android:textSize="@dimen/text_size_large"
-            android:textStyle="bold" />
-
-    </LinearLayout>
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/layout_padding_medium"
+        android:src="@drawable/ic_action_all_apps" />
 
 </RelativeLayout>
