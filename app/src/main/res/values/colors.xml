@@ -7,4 +7,12 @@
     <!-- Text colors -->
     <color name="text_color_white">#FFFFFF</color>
     <color name="text_color_black">#000000</color>
+
+    <!-- Button colors -->
+    <color name="color_red">#F44336</color>
+    <color name="color_orange">#FF9800</color>
+    <color name="color_brown">#795548</color>
+    <color name="color_blue">#2196F3</color>
+    <color name="color_light_green">#8BC34A</color>
+    <color name="color_purple">#9C27B0</color>
 </resources>
